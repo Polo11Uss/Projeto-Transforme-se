@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforme-se</title>
+    <link rel="stylesheet" href="/Style/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex;
+            list-style-type: none;gap: 16px;
+            justify-content: flex-end;">
+            <li><a href="./index.html"> Home </a></li>
+            <li><a href="./sobre.html"> Sobre </a></li>
+            <li><a href="./contato.html"> Contato </a></li>
+            <li><a href="teste.html">Teste </a></li>
+            </ul>
+        </nav>
+        <h1> Bem-vindo ao teste! </h1>
+        <p> Teste Simples!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Teste elaborado de forma simples para testar o <i>HTML</i> </h2>
+        </section>
+
+        <!--Pergunta 1: multipla escolha-->
+        <section>
+            <h2> Quanto é 2+2?</h2>
+            <form>
+                <input type="radio" value="3" id="p1a" name="Pergunta 1">
+                <label for="p1a"> 3 </label> <br>
+                <input type="radio" value="4" id="p1b" name="Pergunta 1">
+                <label for="p1b"> 4 </label> <br>
+                <input type="radio" value="5" id="p1c" name="Pergunta 1">
+                <label for="p1c"> 5 </label> <br>
+                <input type="radio" value="6" id="p1d" name="Pergunta 1">
+                <label for="p1d"> 6 </label> <br>
+            </form>
+        </section>
+        <!--Pergunta 2: Texto-->
+        <section>
+            <h2> Pergunta 2:  Quanto é 5x5?</h2>
+            <form>
+                <input type="text" id="p2" name="Pergunta 2" placeholder="Digite sua resposta...">
+            </form>
+        </section>
+        <!--Pergunta 3: Senha-->
+        <section>
+            <h2> Pergunta 3: Escreva um exemplo de senha forte: </h2>
+            <form>
+                <input type="password" id="p3" name="Pergunta 3"
+                placeholder="Digite aqui...">
+
+            </form>
+        </section>
+        <!--Pergunta 4: Data-->
+        <Section>
+            <h2>Pergunta 4: Quando você nasceu?</h2>
+            <form>
+                <input type="date" id="p4" name="Pergunta 4">
+            </form>
+        </Section>
+        <!--Pergunta 5: Seleção multipla-->
+        <section>
+            <h2>Pergunta 5: selecione numeros pares:</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="Pergunta 5" value="2">
+                <label for="p5a"> 2</label><br>
+                <input type="checkbox" id="p5b" name="Pergunta 5" value="3">
+                <label for="p5b"> 3</label><br>
+                <input type="checkbox" id="p5c" name="Pergunta 5" value="4">
+                <label for="p5c"> 4</label><br>
+                <input type="checkbox" id="p5d" name="Pergunta 5" value="5">
+                <label for="p5d"> 5</label>
+            </form>
+        </section>
+        <!--Pergunta 6:upload-->
+        <section>
+            <h2>Faça o upload contendo o código html</h2>
+            <form>
+                <input type="file" id="p6" name="pergunta 6">
+            </form>
+        </section>
+        <!--Pergunta 7: menu suspenso-->
+        <section>
+            <h2> selecione o atributo que define o seu tipo </h2>
+            <form>
+                <select name="pergunta 7" id="p7">
+                    <option value="boné"> Boné </option>
+                    <option value="camisa"> camisa </option>
+                    <option value="calça"> calça </option>
+                    <option value="tenis"> tenis </option>
+                </select>
+            </form>
+        </section>
+        <!--Pergunta 8: imagem-->
+        <section>
+            <h2>Qual forma está presente na imagem </h2>
+            <figure><img src="./pergunta8.jpg" alt="Quadrado"><br>
+                <figcaption> Adivinha ai (O.o)</figcaption>
+                </figure>
+            <input type="text" id="p8" name="Pergunta 8"
+            placeholder="Digite sua resposta">
+        </section>
+
+        <!--Tabela de pontuação-->
+        <Section>
+            <h2>Tabela de pontuação</h2>
+            <table border="1">
+                <thead>
+                    <th> pontuação </th>
+                    <th> Avaliação </th>
+                </thead>
+                    <tbody>
+                <tr>
+                    <td> 0-2</td>
+                    <td> Não desista, tente novamente ! </td>
+                </tr>
+                 <tr>
+                    <td> 3-4</td>
+                    <td> Não desista, tente novamente :D ! </td>
+                     <tr>
+                    <td> 5-7</td>
+                    <td> Isso ai, está indo bem ! </td>
+                     <tr>
+                    <td> 8</td>
+                    <td> Perfeito! </td>
+                    </tbody>
+                    <tfoot>
+                        <td colspan="2">Boa sorte na próxima</td>
+                    </tfoot>
+                </tr>
+                </tr>
+                </tr>
+            </table>
+        </Section>
+
+        <!--Lista de respostas-->
+        <section>
+            <h2>Verifique as possiveis respostas</h2>
+            <details>
+                <summary>Clique para ver suas respostas</summary>
+            <ol>
+                <li>4</li>
+                <li>25</li>
+                <li>Ab32@jk_</li>
+                <li>00/00/0000</li>
+                <li>2,4</li>
+                <li>Deve ter extensão .html</li>
+                <li> sua resposta</li>
+                <li> Quadrado</li>
+            </ol>
+            </details>
+        </section>
+
+        <!--formulário de Feedback-->
+        <section>
+            <h2>Nos de seu Feedback</h2>
+            <form>
+                <fieldset>
+                    <legend> Informações de contato </legend>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email"> Email</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="comentarios">Comentario</label><br>
+                <textarea id="comentarios"
+                name="comentarios" rows="10" cols="50" placeholder="Digite..."></textarea>
+                </fieldset>
+            </form>
+        </section>
+
+        <button>Enviar Feedback</button>
+    </main>
+
+    <footer>
+        <i style="text-align: center;">
+            &copy;2026 Transforme-se. Todos os direitos reservados.
+        </i>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#f4f0ea;
+    color:#798252;
+    font-family:"Geomini",sans-serif;
+    font-weight: 400;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    padding: 0.8rem 2rem;
+    background-color: #331f19;
+    text-align: center;
+}
+
+header h1{
+    margin-top:0.1rem;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* ================= MENU ================= */
+
+nav ul{
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    position:relative;
+    display:inline-block;
+    text-decoration:none;
+    color:#331f19;
+    background:#ccd595;
+    padding:12px 18px;
+    border-radius:8px;
+    font-size:20px;
+    transition:.35s;
+}
+
+nav a:hover{
+    transform:scale(1.08);
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:100%;
+    height:3px;
+    background:#331f19;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:.35s;
+}
+
+nav a:hover::after{
+    transform:scaleX(1);
+}
+
+/* ================= MAIN ================= */
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.descricao{
+    margin-bottom:50px;
+}
+
+.descricao h1{
+    color:#331f19;
+    margin-bottom:10px;
+}
+
+.descricao h2{
+    margin-bottom:15px;
+}
+
+/* ================= CONTATO ================= */
+
+.contato-titulo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.contato-container{
+    display:flex;
+    gap:40px;
+    align-items:stretch;
+}
+
+/* Card */
+
+.contato-info{
+    flex:1;
+    background:#ccd595;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.contato-info h3{
+    color:#331f19;
+    margin-top:25px;
+}
+
+.contato-info h3:first-child{
+    margin-top:0;
+}
+
+.contato-info p{
+    margin-top:8px;
+}
+
+.contato-info a{
+    color:#331f19;
+    text-decoration:none;
+}
+
+.contato-info a:hover{
+    text-decoration:underline;
+}
+
+/* Formulário */
+
+.contato-form{
+    flex:2;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.contato-form input,
+
+.contato-form textarea{
+    width:100%;
+    padding:15px;
+    border:2px solid #ccd595;
+    border-radius:12px;
+    background:transparent;
+    outline:none;
+    font-size:16px;
+    font-family:"Geomini",sans-serif;
+
+}
+
+.contato-form textarea{
+    height:180px;
+    resize:none;
+}
+
+.contato-form button{
+    width:220px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#331f19;
+    color:#ccd595;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.contato-form button:hover{
+    transform:translateY(-4px);
+    opacity:.9;
+}
+
+@media(max-width:800px){
+    .contato-container{
+        flex-direction:column;
+    }
+
+    nav ul{
+        justify-content:center;
+    }
+}
