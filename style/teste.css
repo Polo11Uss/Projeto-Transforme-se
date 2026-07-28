@@ -1,0 +1,14 @@
+*{
+    margin: 0 ;
+    padding: 0;
+
+}
+
+.conteiner-car-grd{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax);
+    justify-content: center;
+    padding: 24px;
+    gap: 24px
+}
+

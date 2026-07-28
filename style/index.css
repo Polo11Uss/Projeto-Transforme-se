@@ -183,3 +183,25 @@ button{
     border-radius: 5rem;
     cursor: pointer;
 }
+
+footer{
+    background-color:#ccd595;
+    border:2px solid  #331f19;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    align-items: center;
+}
+
+.card {
+    word-break: break-word; 
+    background-color: #edf1ce;
+    color: black;
+    border: 2px solid #331f19;
+    border-radius: 10px;
+    padding: 10px;
+    font-style: italic;
+}
